@@ -11,6 +11,7 @@ class Header extends Component {
 				<Link to="/"><h1 id="logo">studyes</h1></Link>
 				<nav>
 					<ul>
+						<Link to="/all"><li>All</li></Link>
 						<Link to="/contest"><li>공모전</li></Link>
 						<Link to="/getjob"><li>취업스터디</li></Link>
 						<Link to="/language"><li>외국어</li></Link>

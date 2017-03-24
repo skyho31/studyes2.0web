@@ -1,4 +1,6 @@
 
+/* welcome class */
+
 .welcomeContainer {
     width: 100%;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
@@ -7,7 +9,7 @@
     background-position: center;
 }
 
-.welcomeFrame {
+.frame {
     width: 960px;
     margin: auto;
     height: 100%;
@@ -56,19 +58,51 @@
     /* IE6-9 */
 }
 
-.dawn {
-    /* Old browsers */
-    background: #b3cae5;
-    /* FF3.6+ */
-    background: -moz-linear-gradient(-45deg, #b3cae5 12%, #dbdde4 46%, #e4e3e4 70%, #f7ddbb 94%, #efcab2 100%);
-    /* Chrome,Safari4+ */
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(12%, #b3cae5), color-stop(46%, #dbdde4), color-stop(70%, #e4e3e4), color-stop(94%, #f7ddbb), color-stop(100%, #efcab2));
-    /* Chrome10+,Safari5.1+ */
-    background: -webkit-linear-gradient(-45deg, #b3cae5 12%, #dbdde4 46%, #e4e3e4 70%, #f7ddbb 94%, #efcab2 100%);
-    /* Opera 11.10+ */
-    background: -o-linear-gradient(-45deg, #b3cae5 12%, #dbdde4 46%, #e4e3e4 70%, #f7ddbb 94%, #efcab2 100%);
-    /* IE10+ */
-    background: -ms-linear-gradient(-45deg, #b3cae5 12%, #dbdde4 46%, #e4e3e4 70%, #f7ddbb 94%, #efcab2 100%);
-    /* W3C */
-    background: linear-gradient(135deg, #b3cae5 12%, #dbdde4 46%, #e4e3e4 70%, #f7ddbb 94%, #efcab2 100%);
+/* StudyList class */
+
+
+.listTitle{
+	margin: 0 0 24px 10px;
+}
+.studyList{
+	overflow: hidden;
+	margin-bottom:24px;
+}
+
+.studyListBox {
+	background-color: white;
+	width:300px;
+	float:left;
+	margin:0 10px 24px;
+	box-shadow:0 1px 3px 0 rgba(0,0,0,0.2), 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12);
+	cursor: pointer;
+	background-size:cover;
+	background-position: center;
+}
+
+.studyListBox .wrapper:hover {
+	background-color: rgba(0,0,0,.5);
+	color:white;
+}
+
+.studyListBox .wrapper{
+	padding:20px 15px;
+	background-color: rgba(255,255,255,.7)
+}
+
+
+
+.studyTitle{
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom:12px;
+}
+
+.studyDescription {
+	text-align: right;
+}
+
+.studyMember {
+	font-size: 12px;
+	margin-bottom:6px;
 }
