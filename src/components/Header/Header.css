@@ -1,5 +1,5 @@
 header {
-	height:60px;
+	height:54px;
 	padding:0 20px;
 	box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
 }
@@ -8,7 +8,7 @@ header {
 	font-family: 'Nanum Brush Script', cursive;
 	font-size:2em;
 	display: inline-block;
-	line-height: 60px;
+	line-height: 54px;
 }
 
 nav {
@@ -22,7 +22,7 @@ nav ul {
 
 nav li{
 	display: inline-block;
-	line-height: 60px;
+	line-height: 54px;
 	padding:0 10px;
 	margin:0 5px;
 	cursor: pointer
@@ -36,7 +36,7 @@ nav li:hover{
 .searchBar{
 	line-height: 40px;
 	float:right;
-	margin:10px 20px;
+	margin:6px 20px;
 	
 
 }
