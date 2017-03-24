@@ -1,0 +1,78 @@
+header {
+	height:60px;
+	background: #2ecc71;
+	color:white;
+}
+
+
+#logo{
+	font-family: 'Nanum Brush Script', cursive;
+	font-size:35px;
+	display: inline-block;
+	line-height: 60px;
+	margin-left:25px;
+}
+
+.menuButton{
+	float:right;
+	height:16px;
+	width:24px;
+	padding-top:28px;
+	margin-right:25px;
+	cursor:pointer;
+
+}
+
+#menuButton {
+	position: absolute;
+	width:24px;
+	height:2px;
+	background-color:white;
+	transform:translateY(-50%);
+	transition:all .25s ease;
+	-moz-transition:all .25s ease;
+	-webkit-transition:all .25s ease;
+	-o-transition:all .25s ease;
+}
+
+#menuButton::before {
+	content: "";
+	position:absolute;
+	width:24px;
+	height:2px;
+	background-color:inherit;
+	transform: translateY(-6px);
+}
+
+#menuButton::after {
+	content: "";
+	position:absolute;
+	width:24px;
+	height:2px;
+	background-color:inherit;
+	transform: translateY(6px);
+}
+
+.menuButton:hover #menuButton::before {
+	transform: translateY(-8px);
+	-moz-transform: translateY(-8px);
+	-o-transform: translateY(-8px);
+	-webkit-transform: translateY(-8px);
+	-ms-transform: translateY(-8px);
+	transition:all .25s ease;
+	-moz-transition:all .25s ease;
+	-o-transition:all .25s ease;
+	-webkit-transition:all .25s ease;
+}
+
+.menuButton:hover #menuButton::after {
+	transform: translateY(8px);
+	-moz-transform: translateY(8px);
+	-o-transform: translateY(8px);
+	-webkit-transform: translateY(8px);
+	-ms-transform: translateY(8px);
+	transition:all .25s ease;
+	-moz-transition:all .25s ease;
+	-o-transition:all .25s ease;
+	-webkit-transition:all .25s ease;
+}

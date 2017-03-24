@@ -7,16 +7,19 @@ import { Provider } from 'react-redux';
 import logger from 'redux-logger'
 import thunk from 'redux-thunk';
 
-
-import allReducers from './js/reducers/index';
+import allReducers from './reducers/index';
 
 // components & containers
-import App from './js/containers/App';
+import App from './components/App/App';
+
+// reset Css
+import './lib/reset.css';
 
 const store = createStore(
 	allReducers,
 	applyMiddleware(logger, thunk)
 );
+
 
 ReactDOM.render(
 	<Provider store={store}>
