@@ -12,9 +12,6 @@ import allReducers from './reducers/index';
 // components & containers
 import App from './components/App/App';
 
-// reset Css
-import './lib/reset.css';
-
 const store = createStore(
 	allReducers,
 	applyMiddleware(logger, thunk)

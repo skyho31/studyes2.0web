@@ -15,9 +15,12 @@ class App extends Component {
 	render(){
 		return(
 			<Router>
-				<div>
+				<div >
 					<Header />
 					<Route exact path="/" component={Home} />
+					<div className="container">
+						
+					</div>
 				</div>
 			</Router>
 		)
