@@ -1,17 +1,18 @@
-body{
-	height:100vh;
-	width:100vw;
-	font-family: "Nanum Gothic", sans-serif;
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: "Nanum Gothic", sans-serif;
+    background-color: #eceff1;
 }
 
-.container{
-	max-width: 1200px;
-	margin:auto;
+.container {
+    max-width: 1200px;
+    margin: auto;
 }
 
-.wrapper{
-	background-color: rgba(255,255,255,.3);
-	width:100%;
-	height: 100%;
-	padding:20px;
+.wrapper {
+    background-color: rgba(255, 255, 255, .3);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
 }

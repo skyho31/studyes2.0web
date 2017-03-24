@@ -2,6 +2,7 @@ header {
 	height:54px;
 	padding:0 20px;
 	box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+	background-color: white;
 }
 
 #logo{
@@ -35,10 +36,8 @@ nav li:hover{
 
 .searchBar{
 	line-height: 40px;
-	float:right;
+	display: inline-block;
 	margin:6px 20px;
-	
-
 }
 
 .searchBar input {
@@ -50,6 +49,22 @@ nav li:hover{
 	padding: 0 20px;
 	border-radius: 20px;
 }
+
+.goTofacebook{
+	background-color: #4267b2;
+	color:white;
+	height:40px;
+	line-height: 40px;
+	border-radius:40px;
+	padding:0 20px;
+	font-size: 14px;
+}
+
+.goTofacebook:hover {
+	background-color:black;
+}
+
+
 
 .menuButton{
 	float:right;

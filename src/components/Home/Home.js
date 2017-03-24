@@ -1,18 +1,25 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+
+//redux 
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { login } from '../../actions/index';
+
+//css
 import './Home.css';
 
 class Home extends Component {
 	render(){
 		return(
 			<section>
-				<Welcome />
+				<Welcome login={this.props.login}/>
 			</section>
 		)
 	}
 }
 
 class Welcome extends Component {
+
 	render(){
 		return(
 			<article className="welcomeContainer">
@@ -24,7 +31,7 @@ class Welcome extends Component {
 								지금 바로 여러분의 동료를 찾아주세요.
 							</h5>
 						</div>
-						<button className="welcomeButton"><Link to="/start">바로 시작하기</Link></button>
+						<button className="welcomeButton" onClick={()=>this.props.login()}>facebook으로 시작하기</button>
 					</div>
 				</div>
 			</article>
@@ -32,4 +39,14 @@ class Welcome extends Component {
 	}
 }
 
-export default Home;
+function mapStateToProps(state){
+    return {
+        loginState: state.loginState
+    }
+}
+
+function matchDispatchToProps(dispatch){
+    return bindActionCreators({login: login}, dispatch);
+};
+
+export default connect(mapStateToProps,matchDispatchToProps)(Home);
