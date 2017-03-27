@@ -9,7 +9,8 @@ import './App.css';
 // 외부 components 
 import Header from '../Header/Header';
 import Home from '../Home/Home';
-
+import Study from '../Study/Study';
+import ErrorPage from '../ErrorPage/ErrorPage'
 class App extends Component {
 
 	render(){
@@ -18,6 +19,11 @@ class App extends Component {
 				<div >
 					<Header />
 					<Route exact path="/" component={Home} />
+					<Route path="/study" component={Study} />
+					<Route path="/contest" component={ErrorPage} />
+					<Route path="/getjob" component={ErrorPage} />
+					<Route path="/language" component={ErrorPage} />
+					<Route path="/exam" component={ErrorPage} />
 				</div>
 			</Router>
 		)

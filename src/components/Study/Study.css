@@ -1,0 +1,14 @@
+.join {
+	background-color: #ff6666;
+}
+
+dt{
+	margin:20px 0;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+dd{
+	line-height: 20px;
+}

@@ -34,6 +34,11 @@ nav li:hover{
 	color:white;
 }
 
+.selected{
+	border-bottom: 5px solid #ff6666;
+    padding-bottom: 13px;
+}
+
 .searchBar{
 	line-height: 40px;
 	display: inline-block;

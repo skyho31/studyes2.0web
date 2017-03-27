@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Header.css';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 class Header extends Component {
@@ -11,11 +11,26 @@ class Header extends Component {
 				<Link to="/"><h1 id="logo">studyes</h1></Link>
 				<nav>
 					<ul>
-						<Link to="/all"><li>All</li></Link>
-						<Link to="/contest"><li>공모전</li></Link>
-						<Link to="/getjob"><li>취업스터디</li></Link>
-						<Link to="/language"><li>외국어</li></Link>
-						<Link to="/exam"><li>고시</li></Link>
+						<NavLink 
+							to="/contest"
+							activeClassName="selected">
+							<li>공모전</li>
+						</NavLink>
+						<NavLink 
+							to="/getjob"
+							activeClassName="selected">
+							<li>취업스터디</li>
+						</NavLink>
+						<NavLink 
+							to="/language"
+							activeClassName="selected">
+							<li>외국어</li>
+						</NavLink>
+						<NavLink 
+							to="/exam"
+							activeClassName="selected">
+							<li>고시</li>
+						</NavLink>
 						{
 							this.props.isLogged &&
 							<Link to="myTeam"><li>내 정보</li></Link>
