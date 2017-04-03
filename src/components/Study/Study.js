@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
+import { Link, Route } from 'react-router-dom';
 import './Study.css';
+
+import Join from '../Join/Join';
 
 class Study extends Component {
 
 	constructor(props){
 		super(props);
 		this.state = {
-			data : this.props.location.state.data
+			data : this.props.location.state.data,
 		};
 	}
 
@@ -15,13 +18,21 @@ class Study extends Component {
 
 	}
 
+	_openjoinMenu(){
+		this.setState({
+			isJoined:true
+		})
+	}
+
 	render(){
 
-		console.log(this.state)
+		console.log(this.props)
 
 		const style = {
 				"backgroundImage":'url(' + this.state.data.img + ')'
-			}
+		}
+
+		const nextUrl = '/join' + this.props.location.search;
 
 		return(
 			<article>
@@ -34,15 +45,16 @@ class Study extends Component {
 								{this.state.data.member}
 							</h5>
 						</div>
-						<button className="welcomeButton join">
-							스터디 참가하기
-						</button>
+
+						<Link to={nextUrl}>
+							<button className="welcomeButton join">스터디 참가하기</button>
+						</Link>
 					</div>
 				</div>
 			</section>
 			<section className="StudyListContainer">
-				<div dangerouslySetInnerHTML={ this._renderDescription() } className="frame">
-				</div>
+				<div dangerouslySetInnerHTML={ this._renderDescription() } className="frame"/>
+				<Route path={nextUrl} component={Join} />
 			</section>
 			</article>
 		)

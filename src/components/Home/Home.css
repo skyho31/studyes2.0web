@@ -81,9 +81,11 @@
 }
 
 .studyListBox .wrapper:hover {
+	transition:0.4s;
 	background-color: rgba(0,0,0,.5);
 	color:white;
 }
+
 
 .studyListBox .wrapper{
 	padding:20px 15px;
